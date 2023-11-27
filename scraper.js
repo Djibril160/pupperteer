@@ -9,7 +9,8 @@ const scrap = async () => {
     var browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
 
-    // to view the requests and select the ones you want
+    // to view the requests done and select the ones you want
+    // to learn more about that part
     await page.setRequestInterception(true);
     page.on("request", request => {
       if (["stylesheet", "image", "font"].includes(request.resourceType()))
