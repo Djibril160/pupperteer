@@ -2,6 +2,7 @@
   "name": "puppeteer",
   "version": "1.0.0",
   "main": "index.js",
+  "author": "Djibril Soukouna <so.djibril86@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "node index.js"

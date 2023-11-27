@@ -8,7 +8,7 @@ const scrap = async () => {
     await page.goto(
       "https://www.welcometothejungle.com/fr/jobs?refinementList%5Boffices.country_code%5D%5B%5D=FR&refinementList%5Boffices.state%5D%5B%5D=%C3%8Ele-de-France&refinementList%5Bcontract_type%5D%5B%5D=INTERNSHIP&refinementList%5Bcontract_type%5D%5B%5D=FULL_TIME&refinementList%5Bcontract_type%5D%5B%5D=TEMPORARY&query=d%C3%A9veloppeur%20javascript&page=1&aroundQuery=%C3%8Ele-de-France%2C%20France&sortBy=mostRecent", 
       {
-        waitUntil : "domcontentloaded",  
+        waitUntil : "networkidle2",  
       }
     );
 
